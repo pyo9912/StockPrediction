@@ -110,8 +110,8 @@ env.bak/
 venv.bak/
 
 # Data
-.KS.csv
-.csv
+*.KS.csv
+*.csv
 
 # Spyder project settings
 .spyderproject
