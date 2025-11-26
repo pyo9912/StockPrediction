@@ -110,6 +110,9 @@ ENV/
 env.bak/
 venv.bak/
 
+# Data
+.csv
+
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -159,6 +162,7 @@ models/
 model_cache/
 
 # My directories
-/data/
-/logs/
-/output/
+/DataProcess/news_data/*
+/Prediction/data/*
+/Prediction/result/*
+/Prediction/*
