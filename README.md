@@ -1,7 +1,7 @@
 # Stock Prediction Project
 This repo provides the source code & data of Stock Prediction Project.
 
-## 😀 Overview for the base project
+## 🧐 Overview for the base project
 
 **Highlights**:
 - 📈 We analyze a stock price data changes and visualize them with python tools.
