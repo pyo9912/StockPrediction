@@ -5,7 +5,6 @@ __pycache__/
 
 # C extensions
 *.so
-*.ipynb
 # Distribution / packaging
 .Python
 build/
@@ -111,6 +110,7 @@ env.bak/
 venv.bak/
 
 # Data
+.KS.csv
 .csv
 
 # Spyder project settings
