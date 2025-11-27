@@ -24,7 +24,7 @@ def cleanupText(text):
     return (text, result)
 
 def remove_news(args):
-    file_path = os.path.join(args.home, "data_process", "news_data", f"news_{args.year}.json")
+    file_path = os.path.join(args.home, "data", "news_data", f"news_{args.year}.json")
     df = pd.read_json(file_path)
 
     # 대한항공 주 스포츠 제외 
@@ -49,5 +49,5 @@ def remove_news(args):
 
     df["content"].apply(lambda x: cleanupText(x))
 
-    output_path = os.path.join(args.home, "data_process", "data", f"news_{args.year}_update.json")
+    output_path = os.path.join(args.home, "data", "news_data_update", f"news_{args.year}_update.json")
     df.to_json(output_path, orient='records', force_ascii=False, indent=4)

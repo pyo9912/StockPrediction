@@ -71,7 +71,7 @@ def extract_keyword(args):
     year = args.year
 
     # 데이터 불러오기
-    file_path = os.path.join(args.home,"data_process/data",f"news_{year}_update.json")
+    file_path = os.path.join(args.home,"data/news_data_update",f"news_{year}_update.json")
     raw_df = pd.read_json(file_path)
     raw_df['keySentence'] = raw_df['content'].apply(lambda s: s[1])
     df = raw_df[['date', 'title', 'keySentence']].copy()
@@ -130,10 +130,10 @@ def extract_keyword(args):
     print(f'{year} Title Analysis Completed')
 
     # 키워드 추출
-    stopword_path = os.path.join(args.home,'data_process','stopword.csv')
+    stopword_path = os.path.join(args.home,'data/csv_files','stopword.csv')
     stopword_df = pd.read_csv(stopword_path)
     stopwordList = stopword_df['단어'].tolist()
-    company_path = os.path.join(args.home,'data_process','company_list.csv')
+    company_path = os.path.join(args.home,'data/csv_files','company_list.csv')
     company_df = pd.read_csv(company_path)
     companyList = company_df['companyName'].tolist()
     tk = MyTokenizer(stopwordList, companyList)
@@ -141,6 +141,6 @@ def extract_keyword(args):
     res_df['keyWord'] = res_df['news'].apply(lambda x: extractKeyword(x, tk))
     print(f'{year} keyword extracted')
 
-    output_path = os.path.join(args.home,'prediction/result',f"{args.year}_result.json")
+    output_path = os.path.join(args.home,'data/result',f"{args.year}_result.json")
     res_df.to_json(output_path, orient='records', force_ascii=False, indent=4)
     print(f'{year} Dataframe Saved')
