@@ -13,4 +13,4 @@ we propose an ()
 ## 🌟 Updates
 **Highlights**:
 - 📖 All data and crawling process is based on 2022 version.
-- 😎 Part of the code has been updated to 2025 version
+- 😎 Part of the code in Prediction directory has been updated to 2025 version.
