@@ -167,5 +167,3 @@ model_cache/
 /data_process/news_data/*
 /data_process/data/*
 /data_process/ipynb_files/*
-/prediction/result/*
-/Prediction/*
