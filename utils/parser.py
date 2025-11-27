@@ -5,7 +5,7 @@ from pathlib import Path
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--task', type=str, default='data')
+    parser.add_argument('--task', type=str, default='predict')
     parser.add_argument('--year', type=int, default=2021)
     parser.add_argument('--batch_size', type=int, default=16)
     parser.add_argument('--debug', action='store_true')
