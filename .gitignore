@@ -162,7 +162,8 @@ models/
 model_cache/
 
 # My directories
-/DataProcess/news_data/*
-/Prediction/data/*
-/Prediction/result/*
+/data_process/news_data/*
+/data_process/data/*
+/data_process/ipynb_files/*
+/prediction/result/*
 /Prediction/*
