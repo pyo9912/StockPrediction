@@ -12,7 +12,8 @@ This repo provides the source code & data of Stock Prediction Project.
   <img src="./asset/stock_pred.png" width="75%" height="75% title="Overview of iEvaLM-CRS" alt="">
 </p>
 
-## 🌟 Data
+## 🌟 Dataset
 **Highlights**:
 - 📖 All data and crawling process is based on 2022 stock data of Korean Airlines Co., Ltd.
+- You can download dataset from the [link](https://drive.google.com/drive/folders/1dE_oZYd_YrP_1h5XxDTGJmVC2FZd03Cg?usp=drive_link), which include stock price and news data of Korean Airlines Co., Ltd. Please put the downloaded dataset into data directory.
 - 😎 Part of the code in Prediction directory has been updated to 2025 version.
