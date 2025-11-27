@@ -6,11 +6,13 @@ This repo provides the source code & data of Stock Prediction Project.
 **Highlights**:
 - 📈 We analyze a structured/unstructured data and visualize them with python tools.
 - 💡 We propose a deep learning methods that employs stock price and text data for Stock Prediction.
-- 🔝 The RMSE metric can be boosted from () to () on the () dataset with our new deep learning approach.
+- 🔝 We used RMSE metric to evaluate our new deep learning stock prediction method.
 
-we propose an ()
+<p align="center">
+  <img src="./asset/stock_pred.png" width="75%" height="75% title="Overview of iEvaLM-CRS" alt="">
+</p>
 
-## 🌟 Updates
+## 🌟 Data
 **Highlights**:
-- 📖 All data and crawling process is based on 2022 version.
+- 📖 All data and crawling process is based on 2022 stock data of Korean Airlines Co., Ltd.
 - 😎 Part of the code in Prediction directory has been updated to 2025 version.
